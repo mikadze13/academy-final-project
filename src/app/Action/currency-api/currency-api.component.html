@@ -1,0 +1,23 @@
+<app-spinner></app-spinner>
+<div class="child">
+    <div class="child_item">
+        <h1>Crypto Price From Binance</h1>
+        <p>A FREE TEMPLATE BY COLORLIB</p> 
+    </div>
+</div>
+<div class="all-crypto-main"> 
+    <div class="desc">
+        <div>name</div>
+        <div>Price</div>
+        <div>Price Change</div>
+        <div>Price Change To Percent</div>
+        <div>Volume</div>
+        <div>Market Cap</div>
+    </div>
+<app-all-crypto *ngFor="let i of currencyArr | paginate:{itemsPerPage:50, currentPage:page ,totalItems:2104}" [getAllCurrency]="i"></app-all-crypto>
+<div class="paginationdiv">
+     
+    <pagination-controls (pageChange)="page=$event" style="margin-left: -83px;"></pagination-controls>
+    
+</div>
+<app-footer style="background-color: rgba(34,34,34,255); color: black;"></app-footer>

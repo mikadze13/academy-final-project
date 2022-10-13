@@ -1,0 +1,29 @@
+.navbar-brand {
+  margin-left: 60px;
+  color: white;
+}
+.active {
+  color: white !important;
+}
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+.collapse {
+  /* display: flex ; */
+  justify-content: flex-end !important;
+}
+ul li a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-toggler {
+  background: white;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar-brand {
+    margin-left: 0;
+  }
+}

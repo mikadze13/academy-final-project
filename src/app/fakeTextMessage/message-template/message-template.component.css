@@ -1,0 +1,367 @@
+/* ----------background img ----------------- */
+.back-main{
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://wallpaperaccess.com/full/3022420.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.letters{
+  text-align: center;
+}
+h1{
+  margin: 0;
+  color: white;
+  font-weight: 700;
+  font-size: 90px;
+}
+p{
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-weight: 700;
+  color: black;
+}
+
+
+.main {
+  width: 100%;
+  height: auto;
+  background-color: rgba(150, 149, 149, 0.5);
+  display: flex;  
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.left-right-mother{
+  display: flex;
+  justify-content: space-between;
+  width: 50%; 
+}
+.right-div {
+  width: 480px;
+  height: auto;
+  
+}
+.bar {
+  width: 100%;
+  height: 96px;
+  background-color: #f6f6f7;
+}
+.textarea {
+  width: 100%;
+  height: 600px;
+  border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid #c9c9c9;
+  padding-top: 20px;
+  background-color: #fff;
+}
+.send-message {
+  width: 100%;
+  height: 66px;
+  border-top: 1px solid #bac0c5;
+  background-color: #f7f7f8;
+}
+img {
+  width: 35px;
+  height: 15px;
+}
+.juice {
+  position: absolute !important;
+
+  border-top-left-radius: 3px;
+  width: 15px;
+  border-bottom-left-radius: 3px;
+  height: 13px;
+  background-color: black;
+  margin-top: -16px;
+  margin-left: 2px;
+}
+.background {
+  background-color: red !important;
+}
+.precent.ng-star-inserted {
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  animation-name: blue;
+  animation-duration: 0.5s;
+  transition: all 0.1s ease-in-out;
+}
+.battery-main.ng-star-inserted {
+  display: inline-block;
+  animation-name: blue;
+  animation-duration: 0.5s;
+  transition: all 0.1s ease-in-out;
+}
+.functions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4px;
+  padding-left: 5px;
+  height: 32px;
+}
+.percent {
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+.rightside {
+  display: flex;
+  align-items: center;
+}
+
+/* ------------------connection------------------ */
+.dots {
+  display: flex;
+}
+.dots div {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin: 1px;
+  border: 1px solid black;
+}
+.background {
+  background: black;
+}
+.functions-left-side {
+  display: flex;
+  align-items: center;
+}
+.airplane {
+  width: 21px;
+  height: 20px;
+  animation-name: air;
+  animation-duration: 1s;
+  transform: rotate(0deg);
+}
+.paragh {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  margin-left: 4px;
+  color: #000000;
+}
+.paragh1 {
+  margin-left: 11px;
+}
+.air-div {
+  width: 430px;
+  position: absolute;
+}
+@keyframes air {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0.1;
+    margin-left: 410px;
+    transform: rotate(180deg);
+  }
+}
+.direction {
+  height: 32px;
+  margin-bottom: 13px;
+}
+.bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.img1 {
+  width: 100%;
+  height: 100%;
+}
+.direction-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 500;
+}
+.times {
+  padding: 0;
+  position: absolute;
+  width: 470px;
+  text-align: center;
+}
+.bluetooth {
+  width: 12px;
+  height: 21px;
+  animation-name: blue;
+  animation-duration: 0.5s;
+  transition: all 0.1s ease-in-out;
+  margin-right: 8px;
+}
+@keyframes blue {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.alarm img {
+  width: 15px;
+  height: 14px;
+  animation-name: blue;
+  animation-duration: 0.5s;
+  transition: all 0.1s ease-in-out;
+  margin-right: 8px;
+}
+.lock img {
+  width: 17px;
+  height: 16px;
+  animation-name: blue;
+  animation-duration: 0.5s;
+  transition: all 0.1s ease-in-out;
+  margin-right: 8px;
+}
+
+/* send message */
+.send-message {
+  height: 66px;
+  width: 100%;
+  background: #f7f7f8;
+  border-top: 1px solid #bac0c5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.camera img {
+  width: 39px;
+  height: 29px;
+}
+.sendButton {
+  width: 60px;
+  text-align: center;
+}
+.sendButton > img {
+  width: 42px;
+  height: 42px;
+}
+.mic {
+  width: 62px !important;
+  height: 23px !important;
+}
+.message {
+  width: 292px;
+  height: 29px;
+  border: 1px solid #d4d4d7;
+  color: #c0c0c6; 
+  font-size: 20px;
+  background: #fafafa;
+  border-radius: 5px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+ 
+.textarea-inner span{
+  max-width: max-content;
+}
+.in{ 
+    /* margin-left: 24px; */
+    border-radius: 20px 20px 20px 10px;
+    display: block;
+    /* padding: 12px 18px; */
+    min-height: 26px;
+    min-width: 14px;
+    font-size: 24px;
+    line-height: 26px;
+    position: relative;
+}
+/* .blue{
+  background:#95d0fe;
+  width: 100%; 
+} */
+.left{
+  order: 2;
+  display: flex;
+}
+.right{
+  order: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.gray{ 
+  background:#bac0c5;
+    
+  margin-left: 24px;
+  border-radius: 20px 20px 20px 10px; 
+  padding: 12px 18px;
+  min-height: 26px;
+  min-width: 14px;
+  font-size: 24px;
+  line-height: 26px;
+  position: relative;
+  max-width: 270px;
+}
+.green{ 
+  background: #80e8a4; 
+  border-radius: 20px 20px 10px 20px; 
+  padding: 12px 18px;
+  min-height: 26px;
+  margin-right: 24px;
+  min-width: 14px;
+  font-size: 24px;
+  line-height: 26px;
+  position: relative; 
+  max-width: 270px;
+}
+
+ 
+.textarea-inner1{
+  background: #95d0fe;
+  margin-left: 24px;
+  border-radius: 20px 20px 20px 10px;
+  display:block;
+  padding: 12px 18px;
+  /* max-width: 270px; */
+  min-height: 26px;
+  width: 100%;
+  min-width: 14px;
+  font-size: 24px;
+  line-height: 26px;
+  position: relative; 
+}
+.tey{
+  background-color: #80e8a4;
+}
+
+@media screen and (max-width:700px){ 
+  h1{
+      font-size: 75px;
+  }
+}
+@media screen and (max-width:548px){ 
+  h1{
+      font-size: 50px;
+  }
+  .right-div{
+    width: 100%;
+  }
+  .times{
+    width: 100%
+  }
+}
+
+@media screen and (max-width:448px){ 
+  h1{
+      font-size: 30px;
+  }
+  .child-item2{
+      padding-left: 0;
+  }
+}

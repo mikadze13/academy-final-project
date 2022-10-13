@@ -1,0 +1,32 @@
+.coversation-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inp{
+    cursor: auto;
+    width: 160px;
+}
+.new{
+    cursor: pointer;
+    color: #07f;
+    border: none;
+    width:100%;
+}
+.bubble{
+    width: 30px;
+    height: 30px;
+    border-radius:10px;
+    background: #e5e5ea;
+    margin: 3px;
+    cursor: pointer;
+}
+.blue{
+    background:#95d0fe;
+}
+.green{
+    background-color: #80e8a4;
+}
+.input{
+    display: flex; 
+}

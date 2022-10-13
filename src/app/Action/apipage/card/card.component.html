@@ -1,0 +1,15 @@
+<div class="card" style="width: 18rem;">
+  <img [src]="getMemes.url" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{getMemes.name}}</h5>
+    <div class="a-mother"> 
+    <a routerLink="/memesInfo" [queryParams]="{
+         name:getMemes.name,
+         id:getMemes.id,
+         width:getMemes.width,
+         height:getMemes.height,
+         box_count:getMemes.box_count
+        }">Just to show the routing</a>
+  </div>
+</div>
+</div>

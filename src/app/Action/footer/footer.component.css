@@ -1,0 +1,38 @@
+footer{
+    width: 100%;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.footer-child{
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-moth{
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+}
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle img{
+    width: 15px;
+    height: 15px;
+}
+.copyright{
+    margin-top: 16px;
+}
+.copyright img{
+    width: 16px;
+    height: 16px;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #EFEFEF;
+}

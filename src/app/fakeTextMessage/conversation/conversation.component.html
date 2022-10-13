@@ -1,0 +1,24 @@
+<mat-accordion>
+    <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Text Message Conversation
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="coversation-main">
+            <p>Name</p>
+            <input (input)="nickName($event)" type="text" class="inp" placeholder="Name" maxlength="11">
+        </div>
+        <form [formGroup]="userForm" class="coversation-main">
+            <div formArrayName="aliases">
+                <div *ngFor="let alias of aliases.controls; let i = index" class="input">
+                    <input (input)="textMessage($event)" id="aliases-{{i}}" type="text" class="inp" placeholder="Text"
+                        [formControlName]="i">
+
+                </div>
+                <button class="new" (click)="addNew()" type="button">+ Add Text Message</button>
+            </div>
+
+        </form>
+    </mat-expansion-panel>
+</mat-accordion>

@@ -1,0 +1,12 @@
+.main{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/free-vector/internet-network-warning-404-error-page-file-found-web-page_1150-48299.jpg?w=740&t=st=1665415318~exp=1665415918~hmac=19bef49aa4cc4a6df5f7d92fdfe32960c02d73c16698e9ee87e151a461dc01ad');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

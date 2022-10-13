@@ -1,0 +1,15 @@
+ 
+.battery-level{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mt{
+    margin-top: 10px;
+}
+.show-percent{
+    margin-top: 15px;
+    width: 100%; 
+    height: 50px; 
+} 

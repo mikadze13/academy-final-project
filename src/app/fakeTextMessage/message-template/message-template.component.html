@@ -1,0 +1,105 @@
+<app-spinner></app-spinner>
+<div class="back-main">
+    <div class="letters">
+        <h1>iFakeTextMessage Template</h1>
+        <p>A FREE TEMPLATE BY COLORLIB</p> 
+    </div>
+</div>
+
+<div class="main"> 
+    <div class="left-div">
+        <app-conversation (message)="inpMessage($event)" (nickname)="changeNickname($event)"></app-conversation>
+        <app-battery (eventemit)="onSave($event)" (checkemitter)="check($event)"
+            (checkbatteryemitter)="checkBatteryEmitter($event)"></app-battery>
+        <app-connection (airplaneModeEmitter)="airPlaneMode($event)"
+            (connectTypeWithSelect)="connectTypeWithSelect($event)" (connectType)="connectTypeFn($event)"
+            (connectEmitter)="connectionStatus($event)">
+        </app-connection>
+        <app-settings (michToSend)="changeMicToSent($event)" (changeMessage)="changeMessageText($event)"
+            (disturbEmit)="hideOrShowDisturb($event)" (lockEmit)="hideOrShowLock($event)"
+            (alarmEmit)="hideOrShowAlarm($event)" (bluetoothemit)="hideOrShowBlue($event)"
+            (timeemitter)="showTime($event)"></app-settings>
+    </div>
+    <div class="right-div">
+        <div class="phone">
+            <div class="bar">
+                <div class="functions">
+                    <div class="functions-left-side">
+                        <div class="air-div" *ngIf="mode">
+                            <img src="https://ifaketextmessage.com/images/icon_airplane.png" alt="" class="airplane">
+
+                        </div>
+                        <ng-container *ngIf="hide">
+                            <div class="dots">
+                                <div [ngStyle]="{'background':val1}"></div>
+                                <div [ngStyle]="{'background':val1 && val2}"></div>
+                                <div [ngStyle]="{'background':val1 && val2 && val3}"></div>
+                                <div [ngStyle]="{'background':val1 && val2 && val3 && val4}"></div>
+                                <div [ngStyle]="{'background':val1 && val2 && val3 && val4 && val5}"></div>
+                            </div>
+                            <div class="paragh">{{conectType}}</div>
+                            <div class="paragh paragh1">{{connectTypeProvider}}</div>
+                        </ng-container>
+                        <div class="times">{{time}}</div>
+                    </div>
+                    <div class="rightside">
+                        <div *ngIf="disturb" class="lock">
+                            <img src="https://ifaketextmessage.com/images/icon_moon.png" alt="">
+                        </div>
+                        <div *ngIf="lock" class="lock">
+                            <img src="https://ifaketextmessage.com/images/icon_lock.png" alt="">
+                        </div>
+                        <div *ngIf="alarm" class="alarm">
+                            <img src="https://ifaketextmessage.com/images/icon_alarm.png" alt="">
+                        </div>
+                        <div *ngIf="bluet" class="blue">
+                            <img src="https://ifaketextmessage.com/images/icon_bluetooth.png" alt="" class="bluetooth">
+                        </div>
+                        <div class="precent" *ngIf="checkProvider">{{values}} <span
+                                *ngIf="done || checkProvider">%</span>
+                        </div>
+                        <div class="battery-main" *ngIf="checkBatteryStatus">
+                            <img src="https://ifaketextmessage.com/images/icon_battery.png" alt="">
+                            <div [ngClass]="{background}" [ngStyle]="{'width.px':values/3.3} " class="juice"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="direction">
+                    <div class="direction-child">
+                        <div class="name">{{Name}}</div>
+                        <img src="https://ifaketextmessage.com/images/headerButtons.png" alt="" class="img1">
+                    </div>
+                </div>
+            </div>
+            <div class="textarea">
+                <div class="textarea-child">
+                    <div class="textarea-inner " *ngFor="let i of textMessage;let k=index"
+                    [ngClass]="k%2==0?'left':'right'">
+                        <div 
+                        
+                        class="in">
+                            <div [ngClass]="k%2==0?'gray':'green'">{{i}}</div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="send-message">
+                <div class="camera">
+                    <img src="https://ifaketextmessage.com/images/icon_camera.png" alt="camera">
+                </div>
+                <div class="message">
+                    {{messageText}}
+                </div>
+
+                <div class="sendButton">
+                    <img *ngIf="micToSend" src="https://ifaketextmessage.com/images/icon_mic.png" alt="mic">
+                    <img class="mic" *ngIf="!micToSend" src="https://ifaketextmessage.com/images/icon_send.png">
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+     
+</div>
+<app-footer style="background-color: rgba(150, 149, 149, 0.5); width:100%;  margin-top: 107px;"></app-footer>
+ 

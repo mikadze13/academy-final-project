@@ -1,0 +1,10 @@
+<div class="main">
+    <div class="mother">
+        <div class="name">{{getAllCurrency.symbol}}</div>
+        <div class="price">{{getAllCurrency.lastPrice | currency:'USD'}}</div>
+        <div class="change">{{getAllCurrency.priceChange| currency:'USD'}}</div>
+        <div class="changeToPercent">{{getAllCurrency.priceChangePercent | percent}}</div>
+        <div class="volume">{{getAllCurrency.volume| numberSuffix:2 }}</div>
+        <div class="market-cap">{{getAllCurrency.count| numberSuffix:2 }}</div>
+    </div>
+</div>

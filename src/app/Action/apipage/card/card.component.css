@@ -1,0 +1,22 @@
+img{
+    height: 230px;
+    width: 100%;
+    object-fit: center;
+}
+.card{
+    margin: 10px;
+}
+.card-body{
+    height: 150px;
+}
+a{
+    padding: 10px 10px;
+    background-color: lightblue;
+    text-decoration: none;
+    border-radius: 12px;
+    margin: 0px auto;
+}
+.a-mother{
+    margin-top: 40px;
+    width: 100%; 
+}

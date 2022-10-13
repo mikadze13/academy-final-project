@@ -1,0 +1,48 @@
+<mat-accordion>
+    <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Connection
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="connection-main">
+            <div class="signal">
+                <p>Signal Strength</p>
+                <div class="dots">
+                    <div [ngStyle]="{'background':val1}"></div>
+                    <div [ngStyle]="{'background':val1 && val2}"></div>
+                    <div [ngStyle]="{'background':val1 && val2 && val3}"></div>
+                    <div [ngStyle]="{'background':val1 && val2 && val3 && val4}"></div>
+                    <div [ngStyle]="{'background':val1 && val2 && val3 && val4 && val5}"></div>
+                </div>
+            </div>
+
+            <input (input)="onkey($event)" type="range" min="0" max="5" value="3">
+        </div>
+
+        <div class="network-main">
+            <p>Network</p>
+            <input (input)="sprint($event)" type="text" placeholder="Sprint" class="inp" maxlength="10" value="sprint">
+        </div>
+
+        <div class="network-main ">
+            <p>Connection Type</p>
+            <select name="" id="" (change)="connectWithSelect($event)">
+                <option value="LTE">LTE</option>
+                <option value="4G">4G</option>
+                <option value="3G">3G</option>
+                <option value="WIFI">WIFI</option>
+                <option value="1x">1x</option>
+                <option value="none">none</option>
+            </select>
+        </div>
+
+        <div class="network-main">
+            <p>Airplane Mode</p>
+            <input 
+            (click)="airplaneMode($event)"
+            type="checkbox" >
+        </div>
+    </mat-expansion-panel>
+</mat-accordion>

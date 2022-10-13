@@ -1,0 +1,108 @@
+.child{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://wallpaperaccess.com/full/399717.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child_item{
+    text-align: center;
+}
+h1{
+    margin: 0;
+    color: white;
+    font-weight: 700;
+    font-size: 90px;
+}
+p{
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    color: white;
+}
+a{
+    display: inline-block;
+    border-radius: 100px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    font-size: 12px;
+    padding: 17px 28px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: bold;
+    border: 2px solid purple;
+    background-color: black;
+}
+.info-in-card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+}
+.card-mother{
+    display: flex;
+    flex-wrap:wrap ; 
+     justify-content: center;
+}
+.app-card{
+     height: 372px;
+}
+input{
+    cursor: auto; 
+} 
+.paginationdiv{
+    padding: 40px;
+}
+
+@media screen and (max-width:824px){
+    .mother{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    .section-item1{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:700px){
+    .section-item{
+        margin-bottom: 40px;
+    }
+    h1{
+        font-size: 75px;
+    }
+}
+@media screen and (max-width:548px){
+    .section-item{
+        margin-bottom: 120px;
+    }
+    section{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:448px){
+    .child-item1{
+        margin-top: 180px;
+        margin-left: 0;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .child-item2{
+        padding-left: 0;
+    }
+}

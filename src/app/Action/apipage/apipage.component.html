@@ -1,0 +1,19 @@
+<app-spinner></app-spinner>
+<div class="child">
+
+    <div class="child_item">
+        <h1>My Api have fun</h1>
+        <p>A FREE TEMPLATE BY COLORLIB</p> 
+    </div>
+
+</div>
+<div class="info-in-card"> 
+    <h2 style="text-align: center; margin-top: 60px; margin-bottom: 60px; color: white;">Application Programming Interface</h2>
+    <div class="card-mother">
+        <app-card *ngFor="let i of Memes |paginate :{itemsPerPage:15, currentPage:page,totalItems:100}" [getMemes]="i "   ></app-card>
+    </div>
+    <div class="paginationdiv">
+        <pagination-controls (pageChange)="page=$event" style="margin-left: -83px;"></pagination-controls>
+    </div>
+    <app-footer style="background-color: #000000; width:100%;"></app-footer>
+</div>

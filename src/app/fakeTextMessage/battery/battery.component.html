@@ -1,0 +1,27 @@
+<mat-accordion class="mt">
+    <mat-expansion-panel hideToggle> 
+        <mat-expansion-panel-header> 
+            <mat-panel-title >
+                Battery
+            </mat-panel-title> 
+        </mat-expansion-panel-header> 
+        <div class="battery-level">
+            <p>Battery Level</p>
+            <div>{{value}}<span>%</span></div>
+        </div>
+        <input  
+        (input)="onkey($event)" type="range" min="0" max="100" value="50">
+        <div class="show-percent battery-level">
+            <p>Show Percent</p> 
+            <input 
+            (click)="clicked($event)"
+            type="checkbox">
+        </div>
+        <div class="show-battery battery-level">
+            <p>Show Battery</p> 
+            <input 
+            (click)="batteryevent($event)"
+            type="checkbox">
+        </div>
+    </mat-expansion-panel> 
+</mat-accordion>

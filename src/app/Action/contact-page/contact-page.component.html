@@ -1,0 +1,48 @@
+<app-spinner></app-spinner>
+<div class="child1">
+    <div class="child_item">
+        <h1>Contact Us</h1>
+        <p>A FREE TEMPLATE BY COLORLIB</p>
+    </div>
+</div>
+
+<div class="contact-form-main">
+    <div class="main">
+        <div class="child">
+
+            <form [formGroup]="contactForm" (ngSubmit)="contacUser($event)" action="javascript:sendMail()"
+                method="post">
+                <h3>Get In <strong>Touch</strong></h3>
+                <input type="text" id="name" name='Name' placeholder="Your Name" formControlName="name">
+                <span *ngIf="name && name.invalid&&name.touched">Enter Your Name</span>
+
+                <input type="email" id="email" name="Email" placeholder="Your Email" formControlName="email">
+                <span *ngIf="email&&email.invalid&&email.touched">Enter Your Email</span>
+                <input type="number" id="number" name="PhoneNumber" placeholder="Your Phone" formControlName="phone">
+                <span *ngIf="phone&&phone.invalid&&phone.touched">Enter Your Phone Number</span>
+                <textarea cols="30" rows="5" id="message" name="message" placeholder="Write a Message"
+                    formControlName="message"></textarea>
+                <span *ngIf="message&&message.invalid&&message.touched" class="sp4">Enter Your Message</span>
+                <button [disabled]="contactForm.invalid" type="submit">SEND MESSAGE</button>
+            </form>
+            <div class="contact">
+                <h3>My Contact Details</h3>
+                <div class="contact_child">
+                    <span class="info">EMAIL</span> <br>
+                    <span class="desc">mikadzevazha1@gmail.com</span>
+                </div>
+
+                <div class="contact_child">
+                    <span class="info">PHONE</span><br>
+                    <span class="desc">+995 571-52-52-87</span>
+                </div>
+
+                <div class="contact_child">
+                    <span class="info">ADDRESS</span><br>
+                    <span class="desc">Tbilisi, Georgia <br>Didube,Tsereteli</span>
+                </div>
+            </div>
+
+        </div>
+        <app-footer style="background-color: rgba(34,34,34,255); color: white;"></app-footer>
+    </div>

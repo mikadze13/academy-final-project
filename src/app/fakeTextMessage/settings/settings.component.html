@@ -1,0 +1,55 @@
+<mat-accordion>
+    <mat-expansion-panel hideToggle> 
+        <mat-expansion-panel-header> 
+            <mat-panel-title >
+                Settings
+            </mat-panel-title> 
+        </mat-expansion-panel-header>
+        <div class="network-main">
+            <p>Time</p>
+            <input (input)="Time($event)" type="text" class="inp" maxlength="9" value="10:34 AM">
+        </div>
+        <div class="network-main">
+            <p>Show Bluetooth</p>
+            <input 
+            (click)="bluetooth($event)"
+            type="checkbox" class="inp">
+        </div>
+        <div class="network-main">
+            <p>Show Alarm </p>
+            <input 
+            (click)="alarm($event)"
+            type="checkbox" class="inp">
+        </div>
+        <div class="network-main">
+            <p>Show Lock </p>
+            <input 
+            (click)="Lock($event)"
+            type="checkbox" class="inp">
+        </div>
+        <div class="network-main">
+            <p>Show Do Not Disturb</p>
+            <input 
+            (click)="Disturb($event)"
+            type="checkbox" class="inp">
+        </div>
+        <div class="network-main">
+            <p>Message Area</p>
+            <select
+            (change)="changeMessageType($event)" >
+                <option value="iFakeTextMessage.com">iFakeTextMessage.com</option>
+                <option value="iMessage">iMessage</option>
+                <option value="Text Message">Text Message</option>
+            </select>
+        </div>
+        <div class="network-main">
+            <p>Send Button</p>
+            <select 
+            (change)="changeMichToSend($event)"
+            >
+                <option value="Microphone">Microphone</option>
+                <option value="Send">Send</option> 
+            </select>
+        </div>
+    </mat-expansion-panel> 
+</mat-accordion>

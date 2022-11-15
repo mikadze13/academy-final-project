@@ -21,7 +21,7 @@ const routes: Routes = [
   {path:'ContactUs',component:ContactPageComponent},
   { path: 'services', component: ServicesComponent },
   { path: 'Message/Project', component: MessageTemplateComponent },
-  { path: '**', component: PageNotFoundComponent },
+   
 ];
 
 @NgModule({

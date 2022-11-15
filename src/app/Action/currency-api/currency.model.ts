@@ -1,6 +1,6 @@
 export class CurrencyModel{ 
     weightedAvgPrice!:string
-    volume!:string
+    volume!:number
     symbol!:string
     quoteVolume!:string
     priceChangePercent!:string

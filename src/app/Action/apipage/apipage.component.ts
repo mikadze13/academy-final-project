@@ -14,6 +14,7 @@ export class ApipageComponent implements OnInit {
   constructor(private jokememes:ApiserviceService, private filterserv:FilterServiceService ) { }  
   page:number=1  
   Memes:any[]=[] 
+  
   ngOnInit(): void {
     this.jokememes.getAllMemes().subscribe((response:any)=>{
       this.jokememes.getAllMemes().subscribe((response:any)=>{

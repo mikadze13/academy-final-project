@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl:'https://final-project-user-info-default-rtdb.europe-west1.firebasedatabase.app/'
+  baseUrl:'https://new-project-47ea7-default-rtdb.europe-west1.firebasedatabase.app/'
 };
 
 /*

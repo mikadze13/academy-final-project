@@ -10,7 +10,7 @@ export class AllCryptoComponent implements OnInit {
   constructor() { }
   @Input()
   getAllCurrency!:any
-  ngOnInit(): void {
+  ngOnInit(): void { 
   }
 
 }

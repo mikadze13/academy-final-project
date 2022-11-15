@@ -14,11 +14,11 @@ export class CurrencyApiComponent implements OnInit {
   currencyArr:any[]=[]
   page:number=1
   ngOnInit(): void {
-    this.currencyService.getAllCurrency().subscribe((response:any)=>{
+    // this.currencyService.getAllCurrency().subscribe((response:any)=>{
       this.currencyService.getAllCurrency().subscribe((response:any)=>{
         this.currencyArr=response  
       })
-    })
+    // })
   }
 
 }

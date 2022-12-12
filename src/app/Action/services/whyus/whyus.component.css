@@ -32,6 +32,7 @@ h1{
 }
 .section-item1 img{
     width: 100%;
+    object-fit: cover;
     height: 100%;
 }
 a{
@@ -41,6 +42,7 @@ a{
     position: relative;
     z-index: 1;
     font-size: 12px;
+    text-decoration: none;
     padding: 17px 28px;
     text-transform: uppercase;
     letter-spacing: .2rem;

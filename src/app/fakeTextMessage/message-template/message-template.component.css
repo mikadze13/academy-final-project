@@ -288,10 +288,12 @@ img {
 } */
 .left{
   order: 2;
+  margin-top: 12px;
   display: flex;
 }
 .right{
   order: 1;
+  margin-top: 12px;
   display: flex;
   justify-content: flex-end;
 }

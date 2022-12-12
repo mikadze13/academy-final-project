@@ -39,6 +39,9 @@ p{
     padding: 30px;  
     transition: all .1s ease-in-out;
 } 
+a{
+    text-decoration: none;
+}
 .card1:hover{  
     background: linear-gradient(to right,#743ad5 0%,#d53a9d 100%);
     opacity: 0.8;

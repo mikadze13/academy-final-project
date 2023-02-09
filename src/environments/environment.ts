@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl:'https://new-project-47ea7-default-rtdb.europe-west1.firebasedatabase.app/'
+  baseUrl:'https://livechat-17260-default-rtdb.europe-west1.firebasedatabase.app/'
 };
 
 /*

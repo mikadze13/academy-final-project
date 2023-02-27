@@ -2,7 +2,7 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
+export const environment:any = {
   production: false,
   baseUrl:'https://user-318ab-default-rtdb.europe-west1.firebasedatabase.app/'
 };

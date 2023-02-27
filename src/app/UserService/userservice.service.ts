@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class UserserviceService {
-  baseUrl=environment.baseUrl;
+  baseUrl:any=environment.baseUrl;
   constructor(private httpClient:HttpClient) { }
   addInfo(newPersonInfo:any){
     this.httpClient.post(`${this.baseUrl}auth.json`,{contacts:newPersonInfo})

@@ -17,7 +17,7 @@ Install my-project with npm
     
 ## Screenshots
 
-![App Screenshot](https://i.paste.pics/c596c6723277ace18f03ee8814b14a26.png)
+![App Screenshot](/src/assets/images/final-screenshot.png)
 
 ## Links
 - Live site URL - [Live site](https://academy-final-project.vercel.app)
